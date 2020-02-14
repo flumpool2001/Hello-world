@@ -1,0 +1,8 @@
+抓取网页
+>>> import urllib.request
+>>> response = urllib.request.urlopen("https://fishc.com.cn/forum-173-1.html")
+>>> html = response.read()
+>>> print(html)
+网页转码
+>>> html = html.decode("gbk")
+>>> print(html)
